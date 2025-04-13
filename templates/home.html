@@ -1,60 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Home</title>
-  <style>
-    nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
-  
-    nav a {
-      color: white;
-      text-align: center;
-      margin: 5px 15px;
-      text-decoration: none;
-      font-size: 18px;
-      font-family: 'Poppins', sans-serif;
-      transition: color 0.3s ease, background-color 0.3s ease;
-      padding: 8px 12px;
-      border-radius: 5px;
-    }
-  
-    nav a:hover {
-      background-color: #575757;
-      color: #ffcc00;
-    }
-  
-    /* Mobile adjustments */
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 8px 0;
-        width: 80%;
-      }
-    }
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  
-</head>
-<body>
+<!-- home.html -->
+{% extends "base.html" %}
 
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/projects">Projects</a>
-    <a href="/blog/">Blog</a>
-    <a href="/contact">Contact</a>
-  </nav>
+{% block title %}Home - My Site{% endblock %}
 
-  <h1>Welcome to My Personal Website</h1>
-  <p>This is my landing page. More content coming soon!</p>
-  <a href="/blog/">Check out my blog →</a>
-
-</body>
-</html>
+{% block content %}
+<h1>Welcome to My Personal Website!</h1>
+<p>This is the home page content.</p>
+{% endblock %}
