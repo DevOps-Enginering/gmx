@@ -3,23 +3,44 @@
 <head>
   <title>Home</title>
   <style>
-    /* Basic styles for the menu bar */
     nav {
       background-color: #333;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
     }
+  
     nav a {
-      float: left;
-      display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      margin: 5px 15px;
       text-decoration: none;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 8px 12px;
+      border-radius: 5px;
     }
+  
     nav a:hover {
       background-color: #575757;
+      color: #ffcc00;
+    }
+  
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 8px 0;
+        width: 80%;
+      }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  
 </head>
 <body>
 
