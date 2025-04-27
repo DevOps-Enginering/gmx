@@ -17,3 +17,19 @@ def blog_detail(request, post_id):
         raise Http404("Post not found")
     return render(request, 'blog_detail.html', {'post': post})
 
+
+
+
+# from django.shortcuts import render
+# from .models import BlogPost  # Assuming you have a BlogPost model
+
+# # View for listing all blog posts
+# def blog_list(request):
+#     posts = BlogPost.objects.all()  # Fetch all blog posts
+#     return render(request, 'blog/blog_list.html', {'posts': posts})
+
+# # View for displaying a specific blog post based on the ID
+# def blog_detail(request, id):
+#     post = BlogPost.objects.get(id=id)  # Fetch post by id
+#     return render(request, 'blog/blog_detail.html', {'post': post})
+
