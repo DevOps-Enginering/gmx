@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--+cvyknwd(e%sqcx0!hz&_y)*_z81%0zn&je@leijoy*sl6lbd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gmx-tocx.onrender.com', 'localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['gmx-tocx.onrender.com', 'ganzamick.com','www.ganzamick.com','localhost', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition
